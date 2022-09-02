@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap");
+
+html {
+  --dark-background: #141828;
+  --border: rgba(225, 229, 234, 0.1);
+  --dark-text-100: #ffffff;
+  --dark-text-60: rgba(255, 255, 255, 0.6);
+  --dark-text-30: rgba(255, 255, 255, 0.3);
+  --red: #d94040;
+  --blue: #5c7df9;
+  --powered: #d0d6e3;
+  --mobula: #808a9d;
+  --green: #16c784;
+  --fiat: #58667e;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container-block {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px 0px;
+}
+.mobula-text {
+  color: var(--dark-text-100);
+  font-size: 12px;
+}
+.box-price-block {
+  margin-right: 10px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  background: #141821;
+  width: 100%;
+  justify-content: space-between;
+  min-width: 150px;
+  max-width: 150px;
+  display: flex;
+  align-items: start;
+  padding: 15px;
+}
+.token-logo-block {
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+}
+.text-token-name-block {
+  color: var(--dark-text-100);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+.text-price-name-block {
+  color: var(--mobula);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.percentage-box-block {
+  font-size: 12px;
+  font-weight: 400;
+  width: 50px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 4px;
+}
+* {
+  margin: 0px;
+}
+
+.container {
+  font-family: "Inter", sans-serif;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  background: var(--dark-background);
+  width: 100%;
+  color: var(--dark-text-100);
+}
+.info-box {
+  width: 100%;
+  border-bottom: 2px solid var(--border);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  margin-right: 15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+.token-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  color: var(--blue);
+  margin-bottom: 0px;
+}
+
+.token-price {
+  display: flex;
+  align-items: end;
+  margin-top: 5px;
+}
+.span-fiat {
+  color: var(--dark-text-30);
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.span-percentage {
+  color: var(--red);
+}
+
+.volume-box {
+  width: 30%;
+}
+.rank-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.market-box {
+  width: 40%;
+  border-left: 2px solid var(--border);
+  border-right: 2px solid var(--border);
+}
+.padding-box {
+  padding: 20px;
+  white-space: nowrap;
+}
+.row-flex {
+  width: 100%;
+  display: flex;
+}
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.amount-size {
+  font-size: 12px !important;
+  color: var(--dark-text-30);
+}
+.white-600 {
+  color: var(--dark-text-60);
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 6px !important;
+}
+.amount {
+  font-size: 16px;
+}
+
+.padding-powered {
+  padding-top: 6px;
+  border-top: 2px solid var(--border);
+  padding-bottom: 6px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.powered {
+  color: var(--powered);
+  font-size: 12px;
+  font-weight: 400;
+}
+.mobula-logo {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.container-price-marquee {
+  padding: 15px 0px;
+  display: flex;
+  background: #141828;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  overflow-x: scroll;
+}
+
+.powered-price-marquee {
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+  padding-left: 15px;
+  white-space: nowrap;
+  border-right: 1px solid var(--border);
+}
+.powered-text-price-marquee {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: var(--dark-text-100);
+}
+.mobula-text-price-marquee {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--mobula);
+}
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: orange;
+  display: none; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px; /* color of the scroll thumb */
+  /* creates padding around scroll thumb */
+}
+
+.token-text-price-marquee {
+  font-size: 14px;
+  white-space: nowrap;
+  font-weight: 400;
+  color: var(--dark-text-100);
+}
+.fiat-text-price-marquee {
+  font-size: 12px;
+  color: var(--fiat);
+  margin-top: 4px;
+  font-weight: 400;
+}
+.between-price-marquee {
+  display: flex;
+  border-right: 1px solid var(--border);
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+}
+.left-price-marquee {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  padding-left: 15px;
+}
+.right-price-marquee {
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+  align-items: end;
+  padding-left: 15px;
+}
+.price-token-price-marquee {
+  display: flex;
+  align-items: center;
+  color: var(--red);
+  margin-top: 4px;
+}
+.percentage-text-price-marquee {
+  font-size: 13px;
+}
+.percentage-circle {
+  height: 6px;
+  margin-top: 2px;
+  margin-right: 5px;
+  width: 10px;
+  background: var(--red);
+  border-radius: 4px;
+}
